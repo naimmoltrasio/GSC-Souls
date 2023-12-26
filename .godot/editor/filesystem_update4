@@ -1,0 +1,6 @@
+res://default_env.tres
+res://src/Battle.tscn
+res://fonts/NES.tres
+res://scenes/player.tscn
+res://scenes/enemy.tscn
+res://scenes/spectral_desolation.tscn

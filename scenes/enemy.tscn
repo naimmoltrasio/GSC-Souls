@@ -1,0 +1,64 @@
+[gd_scene load_steps=10 format=3 uid="uid://55gd5kg3h5mm"]
+
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_7p2k5"]
+[ext_resource type="Texture2D" uid="uid://b6xwcke67fqyi" path="res://art/old_man/48x48.png" id="2_o5mts"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_440es"]
+atlas = ExtResource("2_o5mts")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s3rlq"]
+atlas = ExtResource("2_o5mts")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2fift"]
+atlas = ExtResource("2_o5mts")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gwao"]
+atlas = ExtResource("2_o5mts")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ovveg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_440es")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s3rlq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2fift")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gwao")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7v0xd"]
+radius = 56.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jvc0w"]
+radius = 16.0
+
+[node name="enemy" type="CharacterBody2D"]
+script = ExtResource("1_7p2k5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ovveg")
+animation = &"idle"
+
+[node name="detection-area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection-area"]
+shape = SubResource("CircleShape2D_7v0xd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8)
+shape = SubResource("CircleShape2D_jvc0w")
+
+[connection signal="body_entered" from="detection-area" to="." method="_on_detectionarea_body_entered"]

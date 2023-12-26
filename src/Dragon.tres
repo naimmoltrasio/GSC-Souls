@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bfsqev2gky08g"]
+
+[ext_resource type="Script" path="res://src/BaseEnemy.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dj6vmsjne3lel" path="res://art/old_man/old man.png" id="2_sntg1"]
+
+[resource]
+script = ExtResource("1")
+name = "Hambu"
+texture = ExtResource("2_sntg1")
+health = 45
+damage = 15
