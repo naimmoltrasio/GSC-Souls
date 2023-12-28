@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Turn-based Combat"
-run/main_scene="res://scenes/spectral_desolation.tscn"
+run/main_scene="res://scenes/introduction.tscn"
 config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
 
@@ -22,8 +22,9 @@ State="*res://src/State.gd"
 
 [display]
 
-window/size/viewport_width=320
-window/size/viewport_height=240
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
 window/size/window_width_override=960
 window/size/window_height_override=720
 window/stretch/mode="viewport"

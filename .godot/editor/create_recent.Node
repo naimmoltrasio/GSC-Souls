@@ -1,0 +1,9 @@
+AudioStreamPlayer
+AnimationPlayer
+ColorRect
+Button
+VBoxContainer
+MarginContainer
+Sprite2D
+Camera2D
+SubViewportContainer

@@ -1,9 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1703607118
-default_env.tres::Environment::5070431552207549466::1703606971::0::1::::<><>::
+::res://::1703776362
+default_env.tres::Environment::5070431552207549466::1703776031::0::1::::<><>::
 icon.png::CompressedTexture2D::5339251549826817527::1644366335::1703605042::1::::<><>::
 README.md::TextFile::-1::1644366335::0::1::::<><>::
-::res://art/::1703605674
+tomp3.cc - Fiki Skibidi Bop Yes Yes Lyrics (mp3cut.net).mp3::AudioStreamMP3::8064710431799058107::1703776343::1703776364::1::::<><>::
+::res://art/::1703772047
 ::res://art/catacombs/::1703605674
 candleA_01.png::CompressedTexture2D::5525333014980169092::1703605667::1703605674::1::::<><>::
 candleA_02.png::CompressedTexture2D::245719176924501345::1703605667::1703605674::1::::<><>::
@@ -27,6 +28,14 @@ torch_3.png::CompressedTexture2D::3409758941278942282::1703605667::1703605674::1
 torch_4.png::CompressedTexture2D::4005227230304739430::1703605667::1703605674::1::::<><>::
 ::res://art/catacombs/PSD/::1703605667
 ::res://art/catacombs/PSD/Anim/::1703605667
+::res://art/combat/::1703719286
+Background.png::CompressedTexture2D::1733079002111505070::1644366335::1703719286::1::::<><>::
+Background_320x240.png::CompressedTexture2D::3386880824977827472::1644366335::1703719286::1::::<><>::
+Batty.png::CompressedTexture2D::6561593269056675776::1644366335::1703719286::1::::<><>::
+Dragon.png::CompressedTexture2D::5433992261540728658::1644366335::1703719286::1::::<><>::
+::res://art/intro/::1703774074
+menu.png::CompressedTexture2D::726027786550735095::1703774065::1703774074::1::::<><>::
+title.png::CompressedTexture2D::37529141366029922::1703772052::1703772092::1::::<><>::
 ::res://art/old_man/::1703606875
 16x16.png::CompressedTexture2D::1204251630194665112::1703605667::1703605674::1::::<><>::
 32x32.png::CompressedTexture2D::494171093129086322::1703605667::1703605674::1::::<><>::
@@ -46,27 +55,26 @@ Jump.png::CompressedTexture2D::5808989354247567833::1703605667::1703605674::1:::
 Run.png::CompressedTexture2D::8230871903018891866::1703605667::1703605674::1::::<><>::
 Take Hit - white silhouette.png::CompressedTexture2D::8575191659654990190::1703605667::1703605674::1::::<><>::
 Take Hit.png::CompressedTexture2D::1380423557497644804::1703605667::1703605674::1::::<><>::
-::res://fonts/::1703605049
+::res://fonts/::1703772211
 Adventurer.ttf::FontFile::6200313091793584327::1644366335::1703605042::1::::<><>::
-NES.tres::FontFile::88665190446201535::1703605049::0::1::::<><>::
+NES.tres::FontFile::88665190446201535::1703772211::0::1::::<><>::
 NESCyrillic.ttf::FontFile::8064488205899254378::1644366335::1703605042::1::::<><>::
-::res://scenes/::1703606971
-enemy.tscn::PackedScene::2167967892559966932::1703606971::0::1::::<><>::res://scripts/enemy.gd<>uid://b6xwcke67fqyi::::res://art/old_man/48x48.png
-player.tscn::PackedScene::4307119375087930769::1703606971::0::1::::<><>::uid://bsgycfee4arsk::::res://art/player/Sprites/Idle.png<>uid://dpjdi05sfp2g1::::res://art/player/Sprites/Run.png<>res://scripts/player.gd
-spectral_desolation.tscn::PackedScene::7724487106600935036::1703606971::0::1::::<><>::uid://tmhbnd1q0xk1::::res://art/catacombs/mainlevbuild.png<>uid://b2mnvku6cm8x6::::res://scenes/player.tscn<>uid://55gd5kg3h5mm::::res://scenes/enemy.tscn
-::res://scripts/::1703606122
+::res://scenes/::1703776031
+enemy.tscn::PackedScene::2167967892559966932::1703776031::0::1::::<><>::res://scripts/enemy.gd<>uid://b6xwcke67fqyi::::res://art/old_man/48x48.png
+player.tscn::PackedScene::4307119375087930769::1703776031::0::1::::<><>::uid://bsgycfee4arsk::::res://art/player/Sprites/Idle.png<>uid://dpjdi05sfp2g1::::res://art/player/Sprites/Run.png<>res://scripts/player.gd
+introduction.tscn::PackedScene::4394632505553812274::1703776031::0::1::::<><>::uid://sgdm81k50sk::::res://art/intro/title.png<>res://scripts/intro.gd
+main_menu.tscn::PackedScene::6498317491911317790::1703776031::0::1::::<><>::uid://klxto0aif3a6::::res://art/intro/menu.png<>res://scripts/main_menu.gd<>uid://bi7kj7uluypr::::res://fonts/NES.tres
+spectral_desolation.tscn::PackedScene::7724487106600935036::1703776031::0::1::::<><>::uid://tmhbnd1q0xk1::::res://art/catacombs/mainlevbuild.png<>uid://b2mnvku6cm8x6::::res://scenes/player.tscn<>uid://55gd5kg3h5mm::::res://scenes/enemy.tscn
+::res://scripts/::1703775953
 enemy.gd::GDScript::-1::1703606122::0::1::::<>CharacterBody2D<>::
 global.gd::GDScript::-1::1703605706::0::1::::<>Node<>::
 player.gd::GDScript::-1::1703605706::0::1::::<>CharacterBody2D<>::
-::res://sprites/::1703605042
-Background.png::CompressedTexture2D::1733079002111505070::1644366335::1703605042::1::::<><>::
-Background_320x240.png::CompressedTexture2D::3386880824977827472::1644366335::1703605042::1::::<><>::
-Batty.png::CompressedTexture2D::6561593269056675776::1644366335::1703605042::1::::<><>::
-Dragon.png::CompressedTexture2D::5433992261540728658::1644366335::1703605042::1::::<><>::
-::res://src/::1703606971
+intro.gd::GDScript::-1::1703775765::0::1::::<>Node2D<>::
+main_menu.gd::GDScript::-1::1703775953::0::1::::<>Control<>::
+::res://src/::1703776030
 BaseEnemy.gd::GDScript::-1::1703605031::0::1::::<>Resource<>::
 Battle.gd::GDScript::-1::1703606762::0::1::::<>Control<>::
-Battle.tscn::PackedScene::7112218234808719529::1703606971::0::1::::<><>::uid://yxrs8aanc0kw::::res://sprites/Background.png<>uid://cjojb81phgdre::::res://sprites/Dragon.png<>uid://bi7kj7uluypr::::res://fonts/NES.tres<>res://src/Battle.gd<>uid://bfsqev2gky08g::::res://src/Dragon.tres
-Batty.tres::Resource::-1::1703605031::0::1::::<><>::res://src/BaseEnemy.gd<>res://sprites/Batty.png
+Battle.tscn::PackedScene::7112218234808719529::1703776030::0::1::::<><>::uid://yxrs8aanc0kw::::res://art/combat/Background.png<>uid://cjojb81phgdre::::res://art/combat/Dragon.png<>uid://bi7kj7uluypr::::res://fonts/NES.tres<>res://src/Battle.gd<>uid://bfsqev2gky08g::::res://src/Dragon.tres
+Batty.tres::Resource::-1::1703719285::0::1::::<><>::res://src/BaseEnemy.gd<>uid://c0qqqn0oge3cm::::res://art/combat/Batty.png
 Dragon.tres::Resource::2775503461503243436::1703606879::0::1::::<><>::res://src/BaseEnemy.gd<>uid://dj6vmsjne3lel::::res://art/old_man/old man.png
 State.gd::GDScript::-1::1703605031::0::1::::<>Node<>::
